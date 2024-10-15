@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="signup-container animate__animated animate__fadeInDown">
+    <form class="signup-form">
+      <h2>Sign up</h2>
+      <div class="name-fields">
+        <div class="input-group">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" placeholder="Input first name" required>
+        </div>
+        <div class="input-group">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" placeholder="Input last name" required>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example.email@gmail.com" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter at least 8+ characters" required>
+      </div>
+      <div class="terms">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">By signing up, I agree with the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
+      </div>
+      <button type="submit" class="animate__animated animate__pulse">Sign up</button>
+      <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+      <div class="or-divider">OR</div>
+      <div class="social-login">
+        <a href="#" class="social-icon google" title="Sign up with Google">
+            <i class="material-icons">google</i>
+        </a>
+        <a href="#" class="social-icon facebook" title="Sign up with Facebook">
+            <i class="material-icons">facebook</i>
+        </a>
+        <a href="#" class="social-icon instagram" title="Sign up with Instagram">
+            <i class="material-icons">instagram</i>
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
