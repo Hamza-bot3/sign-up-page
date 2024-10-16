@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #dcdcdc;
     overflow: hidden;
   }
   
@@ -115,35 +115,51 @@
     right: 0;
   }
 
-  .social-login {
-    display: inline-flex;
-   padding-right: 120px;
-  }
+  /* Styling the container */
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between social icons */
+  margin-top: 20px;
+}
 
-  .social-icon {
-    text-align: center;
-    font-size: 40px;
-    color: #444;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
+/* Styling individual social icons */
+.social-login a {
+  text-decoration: none;
+  color: #fff; /* Icon color */
+  background-color: #444; /* Background color for icons */
+  padding: 10px;
+  border-radius: 50%; /* Make icons round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;  /* Set width for the icon container */
+  height: 50px; /* Set height for the icon container */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
 
-  .social-icon:hover {
-    transform: scale(1.1);
-  }
+/* Change background color on hover */
+.social-login a:hover {
+  background-color: #a92929;
 
-  .social-icon.google:hover {
-    color: #db4437;
-  }
+}
 
-  .social-icon.facebook:hover {
-    color: #4267B2;
-  }
+/* Specific icon color styling */
+.social-icon-google {
+  background-color: #db4437; /* Google red */
+}
 
-  .social-icon.instagram:hover {
-    color: #C13584;
-  }
+.social-icon-facebook {
+  background-color: #4267B2; /* Facebook blue */
+}
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+.social-icon-instagram {
+  background-color: #E1306C; /* Instagram pink */
+}
+
+/* Styling icons */
+.social-login i {
+  font-size: 24px;
+}
+
